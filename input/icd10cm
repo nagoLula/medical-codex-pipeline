@@ -1,0 +1,15 @@
+import shutil
+from pathlib import Path
+
+# Define source and destination paths
+source = Path("icd10cm_order_2025.csv.xlsx")
+destination = Path("inbox/icd10cm.xlsx")
+
+# Create the inbox folder if it doesn't exist
+destination.parent.mkdir(parents=True, exist_ok=True)
+
+# Move and rename the file
+shutil.move(str(source), str(destination))
+
+print("File moved and saved as inbox/icd10cm.xlsx")
+
