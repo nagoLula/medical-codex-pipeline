@@ -1,0 +1,4 @@
+with open('hcpcs.txt', 'w') as f:
+    f.write(r'c:\Users\naira\OneDrive\Documents\medical-codex-pipeline-1\input\hcpcs\HCPC2025_OCT_ANWEB.csv\n')
+    print("File written successfully.")
+    
